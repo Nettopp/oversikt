@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="googlebot" content="noindex,nofollow">
+<title>Morgenbrief</title>
+<style>
+:root{--bg:#f7f8fa;--kort:#fff;--tekst:#16181d;--svak:#6b7280;--kant:#e5e7eb;
+      --bla:#2f6fd0;--gronn:#1a7f37;--rod:#d1242f;--gul:#bf8700;--skygge:0 1px 3px rgba(0,0,0,.07)}
+@media(prefers-color-scheme:dark){
+:root{--bg:#0f1115;--kort:#181b21;--tekst:#e8eaed;--svak:#9aa1ab;--kant:#272b33;
+      --bla:#6ea8f0;--gronn:#4ac26b;--rod:#f47c7c;--gul:#e0b341;--skygge:none}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tekst);font-size:15px;line-height:1.5;
+ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:16px 14px 60px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+h1{font-size:21px;margin:0}
+.oppdatert{font-size:12px;color:var(--svak)}
+.kort{background:var(--kort);border:1px solid var(--kant);border-radius:12px;
+ padding:14px 16px;margin:14px 0;box-shadow:var(--skygge)}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--svak);
+ margin:0 0 10px;font-weight:600}
+.faner{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.fane{border:1px solid var(--kant);background:transparent;color:var(--svak);
+ padding:6px 14px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.fane[aria-selected=true]{background:var(--bla);border-color:var(--bla);color:#fff;font-weight:600}
+.graf{width:100%;height:190px;display:block;touch-action:none}
+.meta{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--svak);margin-top:8px}
+.meta b{color:var(--tekst)}
+.vindu{margin-top:10px;padding:8px 11px;border-radius:8px;font-size:13px;
+ background:color-mix(in srgb,var(--gronn) 12%,transparent);color:var(--gronn);font-weight:600}
+.vindu.ingen{background:color-mix(in srgb,var(--svak) 12%,transparent);color:var(--svak);font-weight:400}
+.rad{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--kant);font-size:14px}
+.rad:last-child{border-bottom:none}
+.badge{font-size:11px;color:var(--svak);white-space:nowrap}
+.sak{border-left:3px solid var(--kant);padding:3px 0 3px 11px;margin:11px 0}
+.sak.p4{border-color:var(--rod)}.sak.p3{border-color:var(--gul)}.sak.p2{border-color:var(--gronn)}
+.sak b{font-size:14px}.sak p{margin:2px 0 0;font-size:13px;color:var(--svak)}
+label.vare{display:flex;gap:9px;align-items:flex-start;padding:6px 0;font-size:14px;cursor:pointer}
+label.vare input{margin:3px 0 0;width:17px;height:17px;accent-color:var(--bla);flex:none}
+label.vare.av span{text-decoration:line-through;color:var(--svak)}
+.seksjon{font-size:13px;font-weight:700;margin:14px 0 2px}
+.seksjon:first-child{margin-top:0}
+.dagbolk{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--svak);
+ font-weight:700;margin:13px 0 3px}
+.dagbolk.naa{color:var(--gronn)}
+a{color:var(--bla)}
+.feil{background:color-mix(in srgb,var(--rod) 10%,transparent);border:1px solid var(--rod);
+ color:var(--rod);border-radius:10px;padding:10px 14px;font-size:13px;margin:14px 0}
+.notis{font-size:11px;color:var(--svak);margin-top:9px}
+footer{margin-top:26px;font-size:11px;color:var(--svak);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>☀️ Morgenbrief</h1><span class="oppdatert" id="oppdatert"></span></header>
+<div id="innhold"></div>
+<footer>MET Norway · yr.no · Todoist · Gjengangeren<br>
+Avkryssing lagres kun i denne nettleseren og synkes ikke til Todoist.</footer>
+</div>
+<script id="data" type="application/json">{"oppdatert": "05.08.2026 kl. 10:59", "terskel": 7.0, "steder": [{"navn": "Oslo", "sted": "Bestumveien", "dager": [{"dato": "2026-08-05", "etikett": "I dag", "timer": [{"t": 10, "vind": 1.8, "kast": 4.3, "dir": 34, "retning": "NØ", "temp": 16.1, "symbol": "heavyrain", "nedbor": 1.1}, {"t": 11, "vind": 0.7, "kast": 3.5, "dir": 52, "retning": "NØ", "temp": 15.7, "symbol": "heavyrain", "nedbor": 1.3}, {"t": 12, "vind": 2.0, "kast": 3.5, "dir": 75, "retning": "ØNØ", "temp": 16.1, "symbol": "heavyrain", "nedbor": 2.1}, {"t": 13, "vind": 1.2, "kast": 3.9, "dir": 63, "retning": "ØNØ", "temp": 15.9, "symbol": "rain", "nedbor": 0.4}, {"t": 14, "vind": 1.2, "kast": 2.4, "dir": 29, "retning": "NNØ", "temp": 16.3, "symbol": "lightrain", "nedbor": 0.2}, {"t": 15, "vind": 1.2, "kast": 2.5, "dir": 49, "retning": "NØ", "temp": 16.6, "symbol": "lightrain", "nedbor": 0.1}, {"t": 16, "vind": 2.2, "kast": 4.0, "dir": 66, "retning": "ØNØ", "temp": 16.6, "symbol": "rain", "nedbor": 0.3}, {"t": 17, "vind": 1.7, "kast": 4.2, "dir": 48, "retning": "NØ", "temp": 16.5, "symbol": "heavyrain", "nedbor": 3.2}, {"t": 18, "vind": 1.5, "kast": 4.0, "dir": 52, "retning": "NØ", "temp": 16.5, "symbol": "heavyrain", "nedbor": 1.1}, {"t": 19, "vind": 2.5, "kast": 4.3, "dir": 64, "retning": "ØNØ", "temp": 16.7, "symbol": "heavyrain", "nedbor": 4.6}, {"t": 20, "vind": 1.3, "kast": 5.1, "dir": 298, "retning": "VNV", "temp": 16.3, "symbol": "rain", "nedbor": 0.9}, {"t": 21, "vind": 1.2, "kast": 3.6, "dir": 347, "retning": "NNV", "temp": 16.4, "symbol": "cloudy", "nedbor": 0.0}, {"t": 22, "vind": 0.9, "kast": 2.0, "dir": 81, "retning": "Ø", "temp": 16.8, "symbol": "cloudy", "nedbor": 0.0}]}, {"dato": "2026-08-06", "etikett": "I morgen", "timer": [{"t": 6, "vind": 5.0, "kast": 8.8, "dir": 201, "retning": "SSV", "temp": 15.7, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 7, "vind": 4.6, "kast": 8.8, "dir": 205, "retning": "SSV", "temp": 15.7, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 8, "vind": 3.7, "kast": 8.1, "dir": 206, "retning": "SSV", "temp": 16.0, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 9, "vind": 3.8, "kast": 6.9, "dir": 203, "retning": "SSV", "temp": 16.7, "symbol": "cloudy", "nedbor": 0.0}, {"t": 10, "vind": 4.2, "kast": 7.6, "dir": 204, "retning": "SSV", "temp": 17.2, "symbol": "cloudy", "nedbor": 0.0}, {"t": 11, "vind": 4.9, "kast": 8.6, "dir": 203, "retning": "SSV", "temp": 17.8, "symbol": "cloudy", "nedbor": 0.0}, {"t": 12, "vind": 4.7, "kast": 9.2, "dir": 202, "retning": "SSV", "temp": 18.3, "symbol": "cloudy", "nedbor": 0.0}, {"t": 13, "vind": 5.0, "kast": 9.0, "dir": 205, "retning": "SSV", "temp": 19.1, "symbol": "cloudy", "nedbor": 0.0}, {"t": 14, "vind": 5.3, "kast": 9.7, "dir": 196, "retning": "SSV", "temp": 19.3, "symbol": "cloudy", "nedbor": 0.0}, {"t": 15, "vind": 4.9, "kast": 9.6, "dir": 194, "retning": "SSV", "temp": 20.2, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 16, "vind": 4.8, "kast": 9.2, "dir": 191, "retning": "S", "temp": 20.6, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 17, "vind": 4.5, "kast": 9.1, "dir": 186, "retning": "S", "temp": 20.7, "symbol": "fair_day", "nedbor": 0.0}, {"t": 18, "vind": 4.2, "kast": 8.5, "dir": 189, "retning": "S", "temp": 20.2, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 19, "vind": 4.6, "kast": 8.2, "dir": 187, "retning": "S", "temp": 19.7, "symbol": "rainandthunder", "nedbor": 0.0}, {"t": 20, "vind": 3.3, "kast": 9.8, "dir": 16, "retning": "NNØ", "temp": 18.2, "symbol": "rainandthunder", "nedbor": 0.0}, {"t": 21, "vind": 3.7, "kast": 6.7, "dir": 341, "retning": "NNV", "temp": 17.1, "symbol": "cloudy", "nedbor": 0.0}, {"t": 22, "vind": 0.8, "kast": 6.6, "dir": 34, "retning": "NØ", "temp": 16.3, "symbol": "cloudy", "nedbor": 0.0}]}, {"dato": "2026-08-07", "etikett": "Fredag", "timer": [{"t": 6, "vind": 1.8, "kast": 5.2, "dir": 335, "retning": "NNV", "temp": 11.2, "symbol": "clearsky_day", "nedbor": 0.0}, {"t": 7, "vind": 0.6, "kast": 3.2, "dir": 214, "retning": "SV", "temp": 12.3, "symbol": "fair_day", "nedbor": 0.0}, {"t": 8, "vind": 0.8, "kast": 2.2, "dir": 240, "retning": "VSV", "temp": 14.0, "symbol": "fair_day", "nedbor": 0.0}, {"t": 9, "vind": 0.3, "kast": 1.9, "dir": 142, "retning": "SØ", "temp": 15.4, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 10, "vind": 1.4, "kast": 3.8, "dir": 151, "retning": "SSØ", "temp": 16.4, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 11, "vind": 2.5, "kast": 5.7, "dir": 164, "retning": "SSØ", "temp": 17.5, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 12, "vind": 3.0, "kast": 6.6, "dir": 179, "retning": "S", "temp": 18.6, "symbol": "fair_day", "nedbor": 0.0}, {"t": 13, "vind": 3.4, "kast": 7.5, "dir": 197, "retning": "SSV", "temp": 19.6, "symbol": "fair_day", "nedbor": 0.0}, {"t": 14, "vind": 3.0, "kast": 7.4, "dir": 187, "retning": "S", "temp": 20.6, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 20, "vind": 2.9, "kast": 0.0, "dir": 187, "retning": "S", "temp": 19.5, "symbol": "partlycloudy_night", "nedbor": 0.0}]}], "bad": [{"navn": "Sollerudstranda", "temp": 18.0, "km": 1.0, "alder_t": 27}, {"navn": "Tjuvholmen", "temp": 18.4, "km": 4.2, "alder_t": 38}, {"navn": "Bogstad badeplass", "temp": 18.5, "km": 5.5, "alder_t": 23}, {"navn": "Båntjern", "temp": 18.5, "km": 5.7, "alder_t": 40}]}, {"navn": "Borre", "sted": "Steinbrygga", "dager": [{"dato": "2026-08-05", "etikett": "I dag", "timer": [{"t": 10, "vind": 3.4, "kast": 6.1, "dir": 27, "retning": "NNØ", "temp": 15.2, "symbol": "lightrain", "nedbor": 0.1}, {"t": 11, "vind": 2.6, "kast": 6.2, "dir": 11, "retning": "N", "temp": 15.6, "symbol": "cloudy", "nedbor": 0.0}, {"t": 12, "vind": 2.8, "kast": 4.9, "dir": 11, "retning": "N", "temp": 16.0, "symbol": "cloudy", "nedbor": 0.0}, {"t": 13, "vind": 2.4, "kast": 5.2, "dir": 359, "retning": "N", "temp": 16.3, "symbol": "cloudy", "nedbor": 0.0}, {"t": 14, "vind": 1.8, "kast": 4.5, "dir": 352, "retning": "N", "temp": 16.5, "symbol": "lightrain", "nedbor": 0.1}, {"t": 15, "vind": 1.5, "kast": 3.6, "dir": 2, "retning": "N", "temp": 16.8, "symbol": "heavyrain", "nedbor": 2.4}, {"t": 16, "vind": 1.7, "kast": 3.2, "dir": 355, "retning": "N", "temp": 16.6, "symbol": "heavyrain", "nedbor": 2.8}, {"t": 17, "vind": 1.4, "kast": 3.1, "dir": 357, "retning": "N", "temp": 16.8, "symbol": "lightrain", "nedbor": 0.2}, {"t": 18, "vind": 2.1, "kast": 3.8, "dir": 55, "retning": "NØ", "temp": 16.8, "symbol": "cloudy", "nedbor": 0.0}, {"t": 19, "vind": 1.5, "kast": 4.2, "dir": 135, "retning": "SØ", "temp": 17.1, "symbol": "cloudy", "nedbor": 0.0}, {"t": 20, "vind": 1.9, "kast": 3.4, "dir": 248, "retning": "VSV", "temp": 17.0, "symbol": "cloudy", "nedbor": 0.0}, {"t": 21, "vind": 2.1, "kast": 4.2, "dir": 231, "retning": "SV", "temp": 16.9, "symbol": "fog", "nedbor": 0.0}, {"t": 22, "vind": 2.8, "kast": 4.9, "dir": 216, "retning": "SV", "temp": 16.9, "symbol": "fog", "nedbor": 0.0}]}, {"dato": "2026-08-06", "etikett": "I morgen", "timer": [{"t": 6, "vind": 5.1, "kast": 10.0, "dir": 212, "retning": "SSV", "temp": 14.1, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 7, "vind": 4.3, "kast": 9.0, "dir": 209, "retning": "SSV", "temp": 14.5, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 8, "vind": 5.3, "kast": 9.7, "dir": 221, "retning": "SV", "temp": 15.6, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 9, "vind": 5.2, "kast": 10.1, "dir": 212, "retning": "SSV", "temp": 16.6, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 10, "vind": 5.6, "kast": 10.5, "dir": 213, "retning": "SSV", "temp": 17.5, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 11, "vind": 6.2, "kast": 12.1, "dir": 211, "retning": "SSV", "temp": 18.2, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 12, "vind": 6.0, "kast": 11.9, "dir": 213, "retning": "SSV", "temp": 18.7, "symbol": "cloudy", "nedbor": 0.0}, {"t": 13, "vind": 6.0, "kast": 11.6, "dir": 212, "retning": "SSV", "temp": 18.4, "symbol": "cloudy", "nedbor": 0.0}, {"t": 14, "vind": 5.3, "kast": 11.4, "dir": 208, "retning": "SSV", "temp": 19.2, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 15, "vind": 4.8, "kast": 10.3, "dir": 194, "retning": "SSV", "temp": 19.3, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 16, "vind": 3.0, "kast": 9.2, "dir": 194, "retning": "SSV", "temp": 19.9, "symbol": "fair_day", "nedbor": 0.0}, {"t": 17, "vind": 3.2, "kast": 6.7, "dir": 214, "retning": "SV", "temp": 20.3, "symbol": "fair_day", "nedbor": 0.0}, {"t": 18, "vind": 4.1, "kast": 7.9, "dir": 206, "retning": "SSV", "temp": 20.5, "symbol": "clearsky_day", "nedbor": 0.0}, {"t": 19, "vind": 4.3, "kast": 8.8, "dir": 211, "retning": "SSV", "temp": 19.5, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 20, "vind": 3.6, "kast": 7.9, "dir": 219, "retning": "SV", "temp": 18.9, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 21, "vind": 2.0, "kast": 6.4, "dir": 268, "retning": "V", "temp": 17.5, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 22, "vind": 2.8, "kast": 5.0, "dir": 342, "retning": "NNV", "temp": 16.8, "symbol": "partlycloudy_night", "nedbor": 0.0}]}, {"dato": "2026-08-07", "etikett": "Fredag", "timer": [{"t": 6, "vind": 2.7, "kast": 4.8, "dir": 317, "retning": "NV", "temp": 13.3, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 7, "vind": 2.5, "kast": 4.7, "dir": 316, "retning": "NV", "temp": 13.4, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 8, "vind": 2.4, "kast": 4.6, "dir": 320, "retning": "NV", "temp": 14.6, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 9, "vind": 2.3, "kast": 4.9, "dir": 335, "retning": "NNV", "temp": 15.9, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 10, "vind": 1.8, "kast": 4.8, "dir": 353, "retning": "N", "temp": 16.8, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 11, "vind": 1.0, "kast": 4.3, "dir": 51, "retning": "NØ", "temp": 17.7, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 12, "vind": 2.2, "kast": 5.5, "dir": 125, "retning": "SØ", "temp": 18.7, "symbol": "fair_day", "nedbor": 0.0}, {"t": 13, "vind": 3.5, "kast": 7.4, "dir": 137, "retning": "SØ", "temp": 19.2, "symbol": "fair_day", "nedbor": 0.0}, {"t": 14, "vind": 4.7, "kast": 9.3, "dir": 151, "retning": "SSØ", "temp": 19.8, "symbol": "partlycloudy_day", "nedbor": 0.0}, {"t": 20, "vind": 3.8, "kast": 0.0, "dir": 172, "retning": "S", "temp": 18.7, "symbol": "fair_night", "nedbor": 0.0}]}], "bad": [{"navn": "Rørestrand", "temp": 17.6, "km": 2.5, "alder_t": 6}, {"navn": "Steinsnes", "temp": 19.5, "km": 2.9, "alder_t": 18}, {"navn": "Åsgårdstrand", "temp": 17.2, "km": 3.3, "alder_t": 0}, {"navn": "Fyllinga", "temp": 17.6, "km": 4.6, "alder_t": 0}]}], "kalender": [{"navn": "Olav aks", "når": "10:00", "dato": "05.08", "i_dag": true}, {"navn": "Båtvakt", "når": "20:30", "dato": "07.08", "i_dag": false}, {"navn": "Kork E18 fre kl.21- 3.aug 06", "når": "21:00", "dato": "07.08", "i_dag": false}, {"navn": "K Arendalsuka", "når": "Hele dagen", "dato": "11.08", "i_dag": false}], "oppfolging": [{"tekst": "HELP-sak Steinbrygga", "beskrivelse": "Råte/maur — avvente saksnummer og advokatoppnevning fra HELP (innmeldt 22.06.2026).", "pri": 4}, {"tekst": "Suzumar MX410", "beskrivelse": "Registrer i Skipsregisteret.", "pri": 3}, {"tekst": "Suzumar — sikkerhetsutstyr", "beskrivelse": "Skaff 5 redningsvester, brannslukker og kasteline.", "pri": 3}, {"tekst": "Port 8443 eksponert", "beskrivelse": "Blue Iris HTTPS eksponert mot internett — vurder å erstatte port forwarding med ZeroTier VPN.", "pri": 3}, {"tekst": "Wingfoil — foilmontering", "beskrivelse": "Flytt F-One M6 US-box-slidere/skruer over på Sky Free-brettet (Axis M8 passer ikke F-One-platen). Axis M8-settet skal returneres.", "pri": 3}, {"tekst": "Norwegian refusjonskrav", "beskrivelse": "Sendt 3. aug (saksref. #4810154). Avventer svar fra Norwegian på drosjekrav (1 269 kr).", "pri": 2}, {"tekst": "Wingfoil — foiltest", "beskrivelse": "Test Phantom 1680 på nåværende oppsett før evt. kjøp av nytt foil — nullkostnad, skal fikse høydekontrollen.", "pri": 2}, {"tekst": "Kartplotter echoMAP 92sv", "beskrivelse": "Monter hekksvinger (Sikaflex 391 kjøpt) + skjermfeste. Gjenstår: mellomplate, kabling, solskjerm (~400 kr), portabelt kit Kjell.com (~130 kr).", "pri": 2}, {"tekst": "Nedslagsseng Steinbrygga", "beskrivelse": "Blokkert: Twin gass-kit (YFHTW241) utgått hos VEVOR EU. Sjekk lagerstatus på fjær-varianten «Springs Mechanism Horizontal» (p_010570950055).", "pri": 2}, {"tekst": "Juleferie 2026", "beskrivelse": "Velg mellom Thailand og Vietnam — book fly innen september 2026.", "pri": 2}, {"tekst": "Soverom TV-stue", "beskrivelse": "Bygg om alkoven til soverom — mål opp, avklar rømningsvindu (TEK17) og evt. søknadsplikt, planlegg ny vegg m/dør + vindu.", "pri": 2}, {"tekst": "Vindu TV-stue", "beskrivelse": "Mål eksisterende åpning — verifiser om Natre 1250×1180 (FINN 451330630) passer. NB: må nå oppfylle rømningsvindu.", "pri": 2}, {"tekst": "AI-kompetanseplan", "beskrivelse": "Start fase 1 — installer Anthropic SDK, les API-docs, skriv første script. Ikke påbegynt siden juni — sett ny frist eller nedprioriter.", "pri": 2}], "handleliste": {"Handleliste": [{"id": "6hCXG9HH5R53r2CV", "tekst": "Ryobi MICROTECH presisjonsskrutrekker (FVD02K)"}, {"id": "6hCXFpQHwC26322V", "tekst": "Tef-Gel (Tikal)"}, {"id": "6hCXH3r5vccHFcC3", "tekst": "Wera 3367 TORX rustfri skrutrekker"}], "Hjemme – ta med": [{"id": "6hCXMjRqGhG2QphV", "tekst": "Karmskruer"}, {"id": "6hCXMjcRX7cJV4F3", "tekst": "Karmverktøy"}, {"id": "6hCXMjgH47rCq8p3", "tekst": "El-kabler"}], "Hytta – ta med": [{"id": "6hCXMjffHc4wWp93", "tekst": "Pipenøkkel-sett"}, {"id": "6hCXMjp74rvJxR73", "tekst": "AA-batterier"}, {"id": "6hCXMjqqWfPxpJX3", "tekst": "Søppelsekker"}, {"id": "6hCXMjrFmXChphhV", "tekst": "Tau til teine"}, {"id": "6hCXMm2WcFJq9rw3", "tekst": "Sikringswire kartplotter"}, {"id": "6hCXMm4F2HxVJM43", "tekst": "Vannski-line"}, {"id": "6hCXMm6fxFfj33H3", "tekst": "Wingfoil-utstyr"}, {"id": "6hCXMm79fccMH7x3", "tekst": "Torx-trekker"}, {"id": "6hCXMmFJhFRHPfFV", "tekst": "Protox"}, {"id": "6hCXMmJ49CXqHmwV", "tekst": "CR2-batteri"}], "Uten seksjon": [{"id": "6hCh6gGXwGRVH2f3", "tekst": "Akryl"}]}, "arrangementer": [{"dag": 0, "etikett": "I dag", "tekst": "Bymuseet, Lokalhistorisk senter: Åpent fra 12 til 16. Våre museumsverter ønsker velkommen til en vandring i lokalhistorien på Lokalhistorisk Senter på Karljohansvern. Skipssimulatoren er dessverre ute av drift."}, {"dag": 0, "etikett": "I dag", "tekst": "Munch på Grand Hotell: Edvard Munch i Åsgårdstrand. Historielagets Munch-utstilling vises på Grand Hotell alle dager fram til 9. august. Fri entre."}, {"dag": 0, "etikett": "I dag", "tekst": "Løvøy kapell: Sommerkveld i Løvøy kapell klokka 19.00. «Musikk og ord til ettertanke». Andakt ved SogneprestLinn Strømme Hummelvoll.. Sang ved Ellen Sofie Mosebekk. Åpent kapell fra kl. 1700."}, {"dag": 1, "etikett": "I morgen", "tekst": "Bymuseet i det gamle Rådhuset, Åsgårdstrand: Åpent alle dager mellom 11-16. Gratis inngang På søndager gratis omvisning kl. 14"}, {"dag": 1, "etikett": "I morgen", "tekst": "Redninga Scene: Hovedøen Social Club - konsert klokka 20.00. De har i 19 år laget usannsynlig heftige og dansbare cubanske versjoner av norsk popmusikk av ikke helt ny dato. Denne litt usannsynlige fusjonen mellom Havanna og Norsk pops grunnvann har gjort at nordboere i alle aldre, farger og fasonger kjenner det rykker i dansefoten og smilerynkene når Hovedøen er på ferde."}, {"dag": 1, "etikett": "I morgen", "tekst": "Saxon King: Pubquiz med Thomas - hver torsdag - fra klokka 20.00. Her snakker vi en god tradisjon, og mange deltakere. Dette er ei populær greie som ruller årets rundt."}, {"dag": 2, "etikett": "Fredag 7.", "tekst": "Redninga Scene: Soul Project NOLA - klokka 20.00. Vi fikk positivt sjokk i fjor da vi fikk besøk av dette bandet - vi kunne rett og slett ikke gjøre noe annet enn å invitere de tilbake over dammen for en ny konsert i år. Dette bandet Må Du få med deg! Bandet spiller mest originalmusikk, supplert med enkelte coverlåter. Soul Project NOLA spiller en herlig miks av soul, funk, blues, R&B, jazz og gospel."}, {"dag": 2, "etikett": "Fredag 7.", "tekst": "Galleri Ask: Anne Sophia Lorange vil vise utstillingen «Når naturen husker / Solastalgia». Gjennom maleri, installasjon og video inviterer kunstneren oss til å reflektere rundt vårt forhold til naturen og den lengselen som kan oppstå når landskap vi kjenner gradvis endres. Åpent fredag – søndag 12.00–16.00."}, {"dag": 3, "etikett": "Lørdag 8.", "tekst": "Karljohansvern: Navy Race 2026. Den gamle orlogstasjonen danner den perfekte kulissen for en episk hinderløypeopplevelse. Gjennom 8km og 30 hindere, vil løypa ta deg gjennom ikoniske områder mens du takler alt fra klatrevegger og krabbing i sand til vassing i vann. Bli med på en adrenalinfylt dag, på land og i vann, på en utfordrende og unik arena."}, {"dag": 3, "etikett": "Lørdag 8.", "tekst": "Horten kirke: Orgelkonsert – Vestfold orgelfestival «Der folk bor» - klokka 15.00. Orgel: Hannah Carding Buxtehude: Preludium i D-dur, Mozart: Adagio-Allegro-Adagio K.594, Naji Hakim: Utdrag fra Suite Norvégienne. Gratis inngang."}, {"dag": 4, "etikett": "Søndag 9.", "tekst": "Naustet / Pernilles venner: Sommerkonsertene på terrassen fortsetter i ettermiddag med Shotgun Whalers. Reinspikka rockabilly med gjeng gode og rutinerte karer fra Holmestrand og Horten. Fra klokka 16-18. Med utallige konserter i inn og utland, har Shotgun Whalers etter hvert blitt et av Norges mest rutinerte live-band. Debuten fant sted for nesten 20 år siden på populære «Summertime Blues» i Horten."}, {"dag": 4, "etikett": "Søndag 9.", "tekst": "Metodistkirken: Gudstjeneste søndag 9.juli kl 11:00-12:30. Velkommen i den åpne kirken i Storgata.Øystein Brinch leder og preker. Alexander Vetlesen Ramfelt er ansvarlig for musikken. Kirkevert: Brith Nygaard.Kirkekaffe etter gudstjenesten."}], "nyheter": {"dato": "2026-08-04", "fersk": false, "saker": [{"tittel": "Forsøkte å ta seg inn i bolig ved hjelp av stige", "url": "https://www.gjengangeren.no/forsokte-a-ta-seg-inn-i-bolig-ved-hjelp-av-stige/s/5-60-1303162"}, {"tittel": "Vil vrake alle båtene unntatt én: –⁠ Han skal få peke ut hjemmet sitt", "url": "https://www.gjengangeren.no/vil-vrake-alle-batene-unntatt-n-han-skal-fa-peke-ut-hjemmet-sitt/s/5-60-1302962"}, {"tittel": "Horten-bedriften leverer rekordresultat - tok utbytte fra Kina", "url": "https://www.gjengangeren.no/horten-bedrift-med-rekordresultat-det-handler-ikke-bare-om-vekst/s/5-60-1302166"}, {"tittel": "Pauline søker mannfolk: –⁠ Blir garantert mye latter", "url": "https://www.gjengangeren.no/pauline-soker-mannfolk-blir-garantert-mye-latter/s/5-60-1302869"}]}, "feil": []}</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const esc = s => String(s).replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+let valgtSted = 0, valgtDag = 0;
+
+document.getElementById('oppdatert').textContent = 'Oppdatert ' + D.oppdatert;
+
+/* ---- vindgraf: SVG tegnet fra data, med terskellinje og vindkast ---- */
+function tegnGraf(timer){
+  const B=780,H=190,mv=30,mh=26,bh=H-mh-14,bb=B-mv-10;
+  const maks=Math.max(12,...timer.map(t=>t.kast))*1.05;
+  const x=i=>mv+(bb*i)/Math.max(1,timer.length-1), y=v=>14+bh-(v/maks)*bh;
+  let s=`<svg class="graf" viewBox="0 0 ${B} ${H}" preserveAspectRatio="none" role="img">`;
+  for(let g=0; g<=maks; g+=4){
+    s+=`<line x1="${mv}" y1="${y(g)}" x2="${B-10}" y2="${y(g)}" stroke="var(--kant)" stroke-width="1"/>`;
+    s+=`<text x="4" y="${y(g)+4}" font-size="11" fill="var(--svak)">${g}</text>`;
+  }
+  const terskel=y(D.terskel);
+  s+=`<line x1="${mv}" y1="${terskel}" x2="${B-10}" y2="${terskel}" stroke="var(--gronn)"
+       stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  s+=`<text x="${B-14}" y="${terskel-5}" font-size="11" fill="var(--gronn)" text-anchor="end">wingfoil ${D.terskel} m/s</text>`;
+  const omr=timer.map((t,i)=>`${x(i)},${y(t.kast)}`).join(' ')
+    +' '+timer.map((t,i)=>`${x(timer.length-1-i)},${y(timer[timer.length-1-i].vind)}`).join(' ');
+  s+=`<polygon points="${omr}" fill="var(--bla)" opacity=".14"/>`;
+  s+=`<polyline points="${timer.map((t,i)=>`${x(i)},${y(t.vind)}`).join(' ')}"
+       fill="none" stroke="var(--bla)" stroke-width="2.5" stroke-linejoin="round"/>`;
+  timer.forEach((t,i)=>{
+    if(t.t%3===0) s+=`<text x="${x(i)}" y="${H-8}" font-size="11" fill="var(--svak)" text-anchor="middle">${t.t}</text>`;
+    s+=`<circle cx="${x(i)}" cy="${y(t.vind)}" r="10" fill="transparent" data-i="${i}"/>`;
+  });
+  return s+'</svg>';
+}
+
+function vindu(timer){
+  let best=null,cur=[];
+  for(const t of timer){
+    if(t.vind>=D.terskel) cur.push(t);
+    else { if(cur.length>=2 && (!best||cur.length>best.length)) best=cur; cur=[]; }
+  }
+  if(cur.length>=2 && (!best||cur.length>best.length)) best=cur;
+  return best;
+}
+
+function tegn(){
+  const st=D.steder[valgtSted], dag=st.dager[valgtDag];
+  let h='';
+  if(D.feil.length) h+=`<div class="feil"><b>⚠ Datakilder som feilet</b><br>${D.feil.map(esc).join('<br>')}</div>`;
+
+  /* vind */
+  h+='<div class="kort"><h2>🌬️ Vind</h2><div class="faner" role="tablist">';
+  D.steder.forEach((s,i)=>h+=`<button class="fane" role="tab" aria-selected="${i===valgtSted}" onclick="velgSted(${i})">${esc(s.navn)}</button>`);
+  h+='</div><div class="faner">';
+  st.dager.forEach((d,i)=>h+=`<button class="fane" role="tab" aria-selected="${i===valgtDag}" onclick="velgDag(${i})">${esc(d.etikett)}</button>`);
+  h+='</div>';
+  if(dag){
+    const tm=dag.timer, topp=tm.reduce((a,b)=>b.vind>a.vind?b:a), v=vindu(tm);
+    h+=tegnGraf(tm);
+    h+=`<div class="meta"><span>Topp <b>${topp.vind} m/s</b> ${esc(topp.retning)} kl ${topp.t}</span>
+        <span>Kast <b>${Math.max(...tm.map(t=>t.kast)).toFixed(1)}</b></span>
+        <span>Temp <b>${Math.min(...tm.map(t=>t.temp))}–${Math.max(...tm.map(t=>t.temp))}°C</b></span>
+        <span>Nedbør <b>${tm.reduce((a,b)=>a+b.nedbor,0).toFixed(1)} mm</b></span></div>`;
+    h+=v ? `<div class="vindu">✅ Wingfoil-vindu ${v[0].t}–${v[v.length-1].t+1} · ${(v.reduce((a,b)=>a+b.vind,0)/v.length).toFixed(1)} m/s ${esc(v[Math.floor(v.length/2)].retning)}</div>`
+         : `<div class="vindu ingen">Ingen sammenhengende vind over ${D.terskel} m/s denne dagen.</div>`;
+  }
+  h+='</div>';
+
+  /* badetemperatur */
+  h+='<div class="kort"><h2>🏊 Badetemperatur</h2>';
+  D.steder.forEach(s=>{ if(s.bad.length){ h+=`<div class="seksjon">${esc(s.navn)}</div>`;
+    s.bad.forEach(b=>h+=`<div class="rad"><span>${esc(b.navn)}</span>
+      <span><b>${b.temp}°C</b> <span class="badge">${b.alder_t<=6?'fersk':b.alder_t+' t'} · ${b.km} km</span></span></div>`);}});
+  h+='</div>';
+
+  /* kalender */
+  if(D.kalender.length){
+    h+='<div class="kort"><h2>📅 Kalender</h2>';
+    D.kalender.forEach(e=>h+=`<div class="rad"><span>${esc(e.navn)}</span>
+      <span class="badge">${e.i_dag?'i dag':esc(e.dato)} ${esc(e.når)}</span></div>`);
+    h+='</div>';
+  }
+
+  /* oppfølging */
+  if(D.oppfolging.length){
+    h+='<div class="kort"><h2>📋 Oppfølging</h2>';
+    D.oppfolging.forEach(t=>h+=`<div class="sak p${t.pri}"><b>${t.tekst}</b>${t.beskrivelse?`<p>${t.beskrivelse}</p>`:''}</div>`);
+    h+='</div>';
+  }
+
+  /* handleliste */
+  const sek=Object.keys(D.handleliste);
+  if(sek.length){
+    h+='<div class="kort"><h2>🛒 Handleliste</h2>';
+    /* NB: samme tankestrek som SEKSJONER i morgenbrief.py — bindestrek her
+       gjorde at to av tre seksjoner falt stille ut av lista. */
+    ['Hytta \u2013 ta med','Hjemme \u2013 ta med','Handleliste','Uten seksjon'].forEach(n=>{
+      if(!D.handleliste[n]) return;
+      h+=`<div class="seksjon">${esc(n)}</div>`;
+      D.handleliste[n].forEach(v=>{
+        const av=localStorage.getItem('v:'+v.id)==='1';
+        h+=`<label class="vare${av?' av':''}"><input type="checkbox" ${av?'checked':''}
+            onchange="kryss('${v.id}',this)"><span>${esc(v.tekst)}</span></label>`;});
+    });
+    h+='<div class="notis">Avkryssing lagres kun her i nettleseren — Todoist oppdateres ikke.</div></div>';
+  }
+
+  /* arrangementer */
+  if(D.arrangementer.length){
+    h+='<div class="kort"><h2>🎪 Hva skjer i Horten</h2>';
+    let f=null;
+    D.arrangementer.forEach(e=>{
+      if(e.dag!==f){f=e.dag;h+=`<div class="dagbolk${e.dag===0?' naa':''}">${esc(e.etikett)}</div>`;}
+      const d=e.tekst.split(':'), sted=d.length>1?d.shift():'';
+      h+=`<div class="rad"><span>${sted?`<b>${esc(sted)}</b> — `:''}${esc(d.join(':').trim())}</span></div>`;});
+    h+='</div>';
+  }
+
+  /* nyheter */
+  if((D.nyheter.saker||[]).length){
+    h+='<div class="kort"><h2>📰 Lokalt</h2>';
+    if(!D.nyheter.fersk) h+=`<div class="notis">Dagens digest har ikke kjørt — saker fra ${esc(D.nyheter.dato)}.</div>`;
+    D.nyheter.saker.forEach(s=>h+=`<div class="rad"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.tittel)}</a></div>`);
+    h+='</div>';
+  }
+
+  document.getElementById('innhold').innerHTML=h;
+}
+function velgSted(i){valgtSted=i;valgtDag=0;tegn();}
+function velgDag(i){valgtDag=i;tegn();}
+function kryss(id,el){localStorage.setItem('v:'+id,el.checked?'1':'0');el.closest('label').classList.toggle('av',el.checked);}
+tegn();
+</script>
+</body>
+</html>
